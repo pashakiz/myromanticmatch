@@ -32,7 +32,7 @@ $(function() {
 
         //upload photo
         $('.custom-file-input').on('change', function(){
-            let imageUrl = 'img/photos/ava.png';
+            let imageUrl = 'img/photos/ava.jpg';
             $('.profile-photo').css('background-image', 'url(' + imageUrl + ')');
         });
 
