@@ -1,0 +1,219 @@
+h1 {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 43px;
+  color: $font_color;
+  margin-bottom: 34px;
+  @media (min-width: 1200px) {
+    color: $font_color2;
+    font-size: 42px;
+    line-height: 65px;
+    margin-bottom: 35px;
+  }
+  @media (min-width: 1500px) {
+    font-size: 63px;
+    line-height: 100px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 63px;
+    line-height: 100px;
+    margin-bottom: 113px;
+  }
+  &.h1_index {
+    color: $input_txt_color;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    margin-bottom: 35px;
+    @media (min-width: 1200px) {
+      color: $font_color3;
+      font-size: 55px;
+      line-height: 70px;
+      margin-bottom: 45px;
+    }
+    @media (min-width: 1500px) {
+      font-size: 70px;
+      line-height: 85px;
+      margin-bottom: 75px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 85px;
+      line-height: 101px;
+      margin-bottom: 75px;
+    }
+  }
+  &.h1__index-content {
+    text-align: center;
+    color: $font_color2;
+    font-size: 51px;
+    line-height: 55px;
+    margin: 0;
+    @media (min-width: 1200px) {
+      color: $font_color2;
+      font-size: 90px;
+      line-height: 110px;
+    }
+    @media (min-width: 1500px) {
+      font-size: 115px;
+      line-height: 170px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 121px;
+      line-height: 175px;
+    }
+  }
+  &.h1_login {
+    text-align: center;
+    color: $input_txt_color;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0 0 32px;
+    @media (min-width: 1200px) {
+      color: $font_color3;
+      margin: 0 0 32px;
+    }
+    @media (min-width: 1500px) {
+      font-size: 48px;
+      line-height: 60px;
+      margin: 0 0 42px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 70px;
+      line-height: 95px;
+      margin: 0 0 50px;
+    }
+  }
+}
+h2 {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 55px;
+  color: $font_color;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 0;
+  br.h2__br {
+    display: none;
+  }
+  @media (min-width: 992px) {
+    font-size: 61px;
+    line-height: 80px;
+    text-align: left;
+    margin-bottom: 75px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 85px;
+  }
+  @media (min-width: 1920px) {
+    br.h2__br {
+      display: block;
+      margin-bottom: 102px;
+    }
+  }
+  &.h2_list {
+    margin: 0 0 12px 0;
+    @media (min-width: 992px) {
+      margin: 50px auto 0;
+      text-align: center;
+    }
+    @media (min-width: 1500px) {
+      margin: 50px 12px 0;
+      text-align: left;
+    }
+  }
+  &.h2_login {
+    margin: 0 auto;
+    text-align: center;
+    color: $font_color2;
+    @media (min-width: 992px) {
+      margin: 0 auto;
+    }
+    @media (min-width: 1200px) {
+      color: $font_color;
+      text-align: left;
+      text-transform: none;
+      font-size: 80px;
+      line-height: 120px;
+      margin: 0;
+    }
+  }
+}
+h3 {
+  font-family: $font_family2;
+  font-weight: 400;
+  color: $font_color;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 50px;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 2;
+    margin-top: 70px;
+    margin-bottom: 32px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 27px;
+    margin-top: 80px;
+    margin-bottom: 35px;
+  }
+}
+.word-break {
+  word-break: break-word;
+}
+p {
+  line-height: 32px;
+  margin-bottom: 1.5rem;
+  @media (min-width: 768px) {
+    line-height: 45px;
+  }
+  b {
+    &.bmark {
+      font-weight: 600;
+      font-family: $font_family;
+    }
+  }
+}
+a {
+  color: $link_color;
+  text-decoration: none;
+  &:hover {
+    color: $link_hover_color;
+    text-decoration: none;
+  }
+}
+.link1 {
+  font-family: $link_txt_family;
+  font-weight: 400;
+  font-size: 12px;
+  color: $link_hover_color2;
+  text-transform: uppercase;
+  &:hover {
+    color: $btn_bg_color;
+    text-decoration: none;
+  }
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    color: #957B70;
+    &:hover {
+      color: $link_hover_color;
+    }
+  }
+}
+.link2 {
+  font-family: $font_family;
+  color: $link_color;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  &:hover {
+    color: $link_hover_color;
+  }
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}

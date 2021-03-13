@@ -1,0 +1,34 @@
+/* font-family: "Branch"; */
+/* font-family: "HurmeGeometricSans3"; */
+
+@font-face {
+    font-family: "Branch";
+    src: url("../fonts/Branch/Branch-Regular.eot");
+    src: url("../fonts/Branch/Branch-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Branch/Branch-Regular.woff") format("woff"),
+    url("../fonts/Branch/Branch-Regular.ttf") format("truetype"),
+    url("../fonts/Branch/Branch-Regular.svg#Branch-Regular") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "HurmeGeometricSans3"; /*Regular*/
+    src: url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-Regular.eot");
+    src: url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-Regular.woff") format("woff"),
+    url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-Regular.otf") format("opentype"),
+    url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-Regular.svg#HurmeGeometricSans3-Regular") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "HurmeGeometricSans3"; /*SemiBold*/
+    src: url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-SemiBold.eot");
+    src: url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-SemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-SemiBold.woff") format("woff"),
+    url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-SemiBold.otf") format("opentype"),
+    url("../fonts/HurmeGeometricSans3/HurmeGeometricSans3-SemiBold.svg#HurmeGeometricSans3-SemiBold") format("svg");
+    font-style: normal;
+    font-weight: 600;
+}

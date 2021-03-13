@@ -1,0 +1,87 @@
+.settings-form {
+  @media (min-width: 360px) {
+    padding-top: 65px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 70px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 0;
+    max-width: 442px;
+    margin-left: 40px;
+  }
+  @media (min-width: 1500px) {
+    margin-left: 70px;
+  }
+  @media (min-width: 1920px) {
+    margin-left: 98px;
+  }
+}
+
+.settings-photo {
+  margin: 0 -15px;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 400px) {
+    width: 320px;
+    max-width: 320px;
+    margin: 0 auto;
+    overflow: visible;
+  }
+  @media (min-width: 768px) {
+    width: 540px;
+    max-width: 540px;
+  }
+  @media (min-width: 1200px) {
+    width: 540px;
+    max-width: 540px;
+    margin: 0 0 0 auto;
+  }
+  @media (min-width: 1500px) {
+    margin: 0 20px 0 auto;
+  }
+  @media (min-width: 1920px) {
+    width: 698px;
+    max-width: 698px;
+    margin: 0;
+  }
+}
+
+.profile-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  width: 117.5%;
+  max-width: 117.5%;
+  height: 410px;
+  max-height: 410px;
+  overflow: hidden;
+  background-color: $bg_dark_1;
+  background-image: url('../img/icons/heart.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
+  position: relative;
+  left: -8.75%;
+  @media (min-width: 400px) {
+    left: 0;
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: 280px;
+    max-height: 280px;
+  }
+  @media (min-width: 768px) {
+    height: 472px;
+    max-height: 472px;
+  }
+  @media (min-width: 1200px) {
+    height: 472px;
+    max-height: 472px;
+  }
+  @media (min-width: 1920px) {
+    height: 610px;
+    max-height: 610px;
+  }
+}

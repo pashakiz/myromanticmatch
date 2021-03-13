@@ -1,0 +1,34 @@
+.footer {
+  background-color: transparent;
+  a.footer__link {
+    font-family: $font_family;
+    font-weight: 400;
+    color: $footer_text_color;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  a.footer__link:hover {
+    color: $footer_text_color_hover;
+    text-decoration: none;
+  }
+  a.footer__link + a.footer__link {
+    margin-top: 42px;
+  }
+  @media (min-width: 992px) {
+    a.footer__link {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    a.footer__link + a.footer__link {
+      margin-top: 0;
+    }
+  }
+}
+
+.footer__bottom {
+  padding: 78px 0 78px;
+  @media (min-width: 992px) {
+    padding: 67px 0 67px;
+  }
+}
+
