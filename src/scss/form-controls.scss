@@ -180,30 +180,19 @@ textarea.form-control {
   }
 }
 .form-group_swicher {
-  padding: 37px 15px 0;
-  border-top: 1px solid $bg_dark_2;
   margin-bottom: 30px;
-  margin-left: -15px;
-  margin-right: -15px;
-  @media (min-width: 576px) {
-    border: none;
-    padding: 0;
-  }
   @media (min-width: 768px) {
-    margin-bottom: 75px;
-  }
-  &:first-child {
-    border: none;
-    padding: 0 15px 0;
-    @media (min-width: 576px) {
-      padding: 0;
-    }
+    margin-bottom: 50px;
   }
 }
 .form-group_btn-unsuscr {
-  margin-top: 71px;
+  margin-top: 45px;
   @media (min-width: 768px) {
-    margin-top: 170px;
+    margin-top: 102px;
+  }
+  @media (min-width: 992px) {
+    width: 404px;
+    margin: 102px auto 0;
   }
 }
 
@@ -446,7 +435,7 @@ textarea.form-control {
     cursor: pointer;
     position: relative;
     @media (min-width: 768px) {
-      padding: 0 0 0 $switch_bg_width+$switch_margin_right;
+      padding: $switch_bg_height+$switch_margin_top 0 0 0;
       margin-left: 0;
       margin-right: 0;
     }
@@ -458,7 +447,8 @@ textarea.form-control {
     position: relative;
     &::before {
       content: $switch_txt;
-      left: 0;
+      left: 50%;
+      margin-left: -($switch_bg_width_mob/2);
       //left: - $switch_bg_width_mob - $switch_margin_right_mob;
       top: - $switch_bg_height_mob - $switch_margin_top_mob;
       //top: calc(0.25rem + 3px);
@@ -469,27 +459,31 @@ textarea.form-control {
       background-color: $switch_bg_color;
     }
     &::after {
-      top: - $switch_bg_height_mob - $switch_margin_top_mob + 4px;
+      top: - $switch_bg_height_mob - $switch_margin_top_mob - 4px;
       //top: calc(0.25rem + 10px);
-      left: 5px;
+      left: 50%;
+      margin-left: -($switch_bg_width_mob/2) - 10px;
       //left: - $switch_bg_width_mob - $switch_margin_right_mob + 7px;
       width: $switch_dot_size_w_mob;
       height: $switch_dot_size_h_mob;
       border-radius: $switch_dot_border_radius;
       background-color: $switch_dot_color;
+      border: 3px solid $body_bg_color;
     }
     @media (min-width: 768px) {
       font-size: $switch_label_fontsize;
       line-height: $switch_label_lineheight;
       &::before {
-        top: calc(0.25rem + 3px);
-        left: - $switch_bg_width - $switch_margin_right;
+        top: - $switch_bg_height - $switch_margin_top;
+        left: 50%;
+        margin-left: -($switch_bg_width/2);
         width: $switch_bg_width;
         height: $switch_bg_height;
       }
       &::after {
-        top: calc(0.25rem + 10px);
-        left: - $switch_bg_width - $switch_margin_right + 7px;
+        top: - $switch_bg_height - $switch_margin_top - 4px;
+        left: 50%;
+        margin-left: -($switch_bg_width/2) - 10px;
         width: $switch_dot_size_w;
         height: $switch_dot_size_h;
       }
@@ -499,33 +493,15 @@ textarea.form-control {
     &:checked {
       ~.custom-control-label {
         &::before {
-          border-color: $switch_dot_color_active;
+          border-color: $switch_border_color;
           background-color: $switch_bg_color_checked;
           color: $switch_txt_color_checked;
         }
         &::after {
-          /*----heart----*/
-          width: 30px;
-          height: 26px;
-          top: - 26px - $switch_margin_top_mob + 5px;
-          left: 3px;
-          border-radius: 0;
-          background-image: url('../img/icons/heart.svg');
-          background-size: 98%;
-          background-color: transparent;
-          transition: background-color 0s ease-in-out, width 0.15s ease-in-out, height 0.15s ease-in-out, top 0.15s ease-in-out;
-          /*----heart----*/
-          //background-color: $switch_dot_color_active;
-          transform: translateX(18px);
+          background-color: $switch_dot_color_active;
+          transform: translateX(37px);
           @media (min-width: 768px) {
-            /*----heart----*/
-            width: 35px;
-            height: 31px;
-            top: calc(0.25rem + 1px);
-            left: - $switch_bg_width - $switch_margin_right + 4px;
-            background-size: 100%;
-            /*----heart----*/
-            transform: translateX(28px);
+            transform: translateX(37px);
           }
         }
       }
@@ -540,7 +516,7 @@ textarea.form-control {
     &:focus:not(:checked) {
       ~.custom-control-label {
         &::before {
-          border-color: $switch_dot_color;
+          border-color: $switch_border_color;
         }
       }
     }
@@ -548,7 +524,7 @@ textarea.form-control {
       ~ .custom-control-label {
         &::before {
           background-color: $switch_bg_color_active;
-          border-color: $btn_bg_color;
+          border-color: $switch_border_color;
         }
       }
     }
@@ -668,31 +644,50 @@ textarea.form-control {
 
 .btn {
   width: 100%;
-  height: 52px;
-  padding: 18px 30px;
-  border-radius: 100px;
-  background: $btn_bg_color;
+  height: 66px;
+  padding: 6px 7px;
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid $btn_bg_color;
   font-family: $font_family;
-  font-size: 15px;
-  font-weight: 600;
-  color: $font_color3;
+  font-size: 18px;
+  font-weight: 400;
+  color: $body_bg_color;
   line-height: 1;
   position: relative;
-  text-transform: uppercase;
   &:hover {
-    color: $font_color3;
-    background-color: $btn_hover_bg_color;
+    color: $body_bg_color;
+    background-color: transparent;
+    border-color: $btn_hover_bg_color;
+    &::after {
+      background-color: $btn_hover_bg_color
+    }
   }
   &:focus {
     outline: none;
     box-shadow: none;
   }
+  &::after {
+    content: '';
+    display: block;
+    background: $btn_bg_color;
+    width: calc(100% - 14px);
+    height: calc(100% - 12px);
+    position: absolute;
+    top: 6px;
+    z-index: -10;
+  }
   @media (min-width: 992px) {
     width: auto;
-    max-width: 440px;
-    height: 70px;
-    font-size: 20px;
-    padding: 23px 50px 22px;
+    max-width: 414px;
+    height: 102px;
+    font-size: 26px;
+    padding: 8px 10px;
+    &::after {
+      width: calc(100% - 20px);
+      height: calc(100% - 16px);
+      top: 8px;
+    }
   }
   &.btn_1 { //index
     display: block;

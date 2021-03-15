@@ -105,7 +105,7 @@ h2 {
     line-height: 120px;
     margin-bottom: 98px;
     &.h2_bg {
-      padding: 100px 135px;
+      padding: 100px 0;
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: 100%;
@@ -115,6 +115,11 @@ h2 {
       }
       &.h2_bg-anytext {
         background-image: url('../img/bg/bg-text-privacy.svg');
+      }
+      &.h2_bg-unsubscribe {
+        padding-left: 15px;
+        padding-right: 15px;
+        background-image: url('../img/bg/bg-text-unsubscribe.svg');
       }
     }
   }

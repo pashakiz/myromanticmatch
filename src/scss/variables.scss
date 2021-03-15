@@ -124,35 +124,36 @@ $radio_active_bg_color:      $radio_bg_color;
 $radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%234E464F'/%3E%3C/svg%3E";
 
 //Custom Switch
-$switch_bg_width: 55px;
-$switch_bg_height: 26px;
-$switch_bg_width_mob: 35px;
-$switch_bg_height_mob: 15px;
+$switch_bg_width: 46px;
+$switch_bg_height: 20px;
+$switch_bg_width_mob: 46px;
+$switch_bg_height_mob: 20px;
 $switch_bg_border_radius: 100px;
-$switch_dot_size_w: 13px;
-$switch_dot_size_h: 13px;
-$switch_dot_size_w_mob: 7px;
-$switch_dot_size_h_mob: 7px;
+$switch_dot_size_w: 29px;
+$switch_dot_size_h: 29px;
+$switch_dot_size_w_mob: 29px;
+$switch_dot_size_h_mob: 29px;
 $switch_dot_border_radius: 100%;
 $switch_bg_color: transparent;
 $switch_bg_color_active: $switch_bg_color;
 $switch_bg_color_checked: $switch_bg_color;
-$switch_dot_color: #8F7E75;
+$switch_dot_color: #C4BDC0;
 $switch_dot_color_active: $btn_bg_color;
-$switch_border: 1px solid $switch_dot_color;
-$switch_border_active: 1px solid $bg_light_1;
+$switch_border_color: #000;
+$switch_border: 1px solid $switch_border_color;
+$switch_border_active: 1px solid $switch_border_color;
 $switch_txt: '';
 $switch_txt_color: $font_color;
 $switch_txt_color_checked: $font_color;
-$switch_margin_right: 42px;
-$switch_margin_right_mob: 30px;
-$switch_margin_top: 0;
-$switch_margin_top_mob: 30px;
+$switch_margin_right: 0;
+$switch_margin_right_mob: 0;
+$switch_margin_top: 24px;
+$switch_margin_top_mob: 24px;
 $switch_label_fontfamily: $font_family;
 $switch_label_fontsize: $font_size;
-$switch_label_fontsize_mob: 16px;
-$switch_label_lineheight: 36px;
-$switch_label_lineheight_mob: 30px;
+$switch_label_fontsize_mob: 15px;
+$switch_label_lineheight: 32px;
+$switch_label_lineheight_mob: 32px;
 
 //Bootstrap container width
 @function get-container-width($key: 'md') {
