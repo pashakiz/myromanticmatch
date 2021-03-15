@@ -1,41 +1,52 @@
 .logo {
-  width: 145px;
-  height: 13px;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: auto;
-  background-image: url('../img/icons/logo-header-m.svg');
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: normal;
   @media (min-width: 992px) {
-    width: 202px;
-    height: 18px;
-    background-image: url('../img/icons/logo-header-d.svg');
+    margin: 0 11px 0 0;
   }
-}
-
-.logo_main,
-.logo_login {
-  width: 199px;
-  height: 18px;
-  margin: 0 auto;
-  @media (min-width: 992px) {
-    width: 312px;
-    height: 28px;
-    margin: 0 auto;
+  .logo__img {
+    width: 18px;
+    height: 25px;
+    margin: 0 13px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto;
+    background-image: url('../img/icons/logo.svg');
+    @media (min-width: 992px) {
+      width: 35px;
+      height: 50px;
+      margin: 0 20px 0 0;
+    }
   }
-  @media (min-width: 1200px) {
-    background-image: url('../img/icons/logo-header-d-index.svg');
+  .logo__txt {
+    font-family: $font_family;
+    color: $font_color;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    @media (min-width: 992px) {
+      font-size: 30px;
+      line-height: 41px;
+    }
   }
 }
 
 .logo_footer {
-  width: 180px;
-  height: 16px;
-  margin: 0 auto 41px;
-  background-image: url('../img/icons/logo-footer-m.svg');
-  @media (min-width: 992px) {
-    width: 175px;
-    height: 16px;
-    margin: 0;
-    background-image: url('../img/icons/logo-footer-d.svg');
+  .logo__img {
+    width: 21px;
+    height: 31px;
+    @media (min-width: 992px) {
+      width: 27px;
+      height: 40px;
+      margin: 0 16px 0 0;
+    }
+  }
+  .logo__txt {
+    @media (min-width: 992px) {
+      font-size: 23px;
+      line-height: 32px;
+    }
   }
 }

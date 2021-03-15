@@ -2,11 +2,31 @@
   position: relative;
   &.expand {
     .header__nav-toggle {
-      background-size: 13px;
-      background-image: url('../img/icons/close.svg');
+      .menu {
+        width: 25px;
+        height: 25px;
+        background-image: url('../img/icons/close.svg');
+      }
     }
   }
-  .notice {}
+  .notice {
+    display: inline-block;
+    background-color: $btn_bg_color;
+    border-radius: 100px;
+    color: $body_bg_color;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 8px 6px;
+    line-height: 1;
+    text-align: center;
+    &:hover {
+      background-color: $btn_hover_bg_color;
+    }
+    @media (min-width: 992px) {
+      font-size: 20px;
+      padding: 4px 10px 7px;
+    }
+  }
   &.header_bg {
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -137,17 +157,9 @@
 }
 
 .header_page {
-  margin-bottom: 37px;
-  border-bottom: 1px solid $bg_dark_2;
-  @media (min-width: 768px) {
-    margin-bottom: 70px;
-  }
-  @media (min-width: 992px) {
-    margin-bottom: 100px;
-    border-bottom: none;
-  }
-  @media (min-width: 1920px) {
-    margin-bottom: 153px;
+  margin-bottom: 21px;
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
@@ -165,12 +177,12 @@
 }
 
 .header__row {
-  padding: 34px 0 27px;
+  padding: 28px 0 26px;
   @media (min-width: 992px) {
-    padding: 98px 0 37px;
+    padding: 84px 0 50px;
   }
-  @media (min-width: 1920px) {
-    padding: 98px 15px 37px;
+  .header__row-inline {
+    position: relative;
   }
   &.header__row_login {
     padding: 0 0 51px;
@@ -208,22 +220,24 @@
 }
 
 .header__nav-toggle {
-  display: block;
-  width: 18px;
-  height: 18px;
-  margin-left: 10px;
-  cursor: pointer;
-  background-image: url('../img/icons/bell.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 100%;
-  position: relative;
-  &:hover {
-    opacity: 0.75;
+  .menu {
+    display: block;
+    width: 17px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-image: url('../img/icons/bell.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    position: relative;
+    &:hover {
+      opacity: 0.75;
+    }
   }
-  @media (min-width: 992px) {
-    width: 26px;
-    height: 26px;
+  .notice {
+    position: absolute;
+    top: 7px;
   }
 }
 
@@ -235,7 +249,7 @@
   padding-bottom: 18px;
 }
 .header-menu__item {
-  padding: 10px 0;
+  padding: 10px 0 20px;
   font-family: $font_family2;
   font-weight: 400;
   font-size: 30px;
@@ -244,12 +258,13 @@
   line-height: 1;
   &:hover {
     text-decoration: none;
-    color: $bg_light_2;
+    color: $font_color;
+    .notice {
+      background-color: $btn_hover_bg_color;
+    }
   }
   .notice {
-    font-size: 18px;
-    position: relative;
-    bottom: -4px;
+    margin-bottom: 8px;
   }
 }
 .header-menu__item-text {
