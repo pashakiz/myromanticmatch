@@ -30,13 +30,16 @@ body {
   }
   &.container_settings {
     @media (min-width: 1200px) {
-      padding-top: 123px;
+      padding-top: 120px;
     }
     @media (min-width: 1500px) {
       max-width: 1338px + $grid-gutter-width;
     }
   }
   &.container_profile {
+    @media (min-width: 1200px) {
+      padding-top: 120px;
+    }
     .container__inner {
       @media (min-width: 1200px) {
         padding: 0 11px;
