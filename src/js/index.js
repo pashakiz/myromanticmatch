@@ -45,6 +45,36 @@ $(function() {
             $('.user-profile-photo').css('background-image', 'url(' + url + ')');
         });
 
+        /* Gallery dragging/grabbing */
+        const slider = document.querySelector('.user-profile-gallery');
+        let isDown = false;
+        let startY;
+        let scrollTop;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            //slider.classList.add('active');
+            startY = e.pageY - slider.offsetTop;
+            scrollTop = slider.scrollTop;
+        });
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            slider.classList.add('active');
+            const y = e.pageY - slider.offsetTop;
+            const walk = (y - startY) * 2; //scroll-fast
+            slider.scrollTop = scrollTop - walk;
+            console.log(walk);
+        });
+
         //slider (Profile gallery) for mobile
         $('.owl-carousel.user-profile-slider').owlCarousel({
             items: 1,
