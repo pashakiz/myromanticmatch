@@ -163,7 +163,11 @@
   }
 }
 
-.header_pagelist {
+.header_page-settings {
+  margin: 0;
+}
+
+.header_page-list {
   margin-bottom: 0;
   @media (min-width: 768px) {
     margin-bottom: 30px;

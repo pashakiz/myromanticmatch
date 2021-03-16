@@ -1,4 +1,7 @@
 <%= _.template(require('./../includes/header.html'))() %>
+    <script>
+        document.querySelector('.header.header_page').classList.add('header_page-settings');
+    </script>
     <main class="main">
         <div class="container container_settings">
             <form action="">
@@ -63,11 +66,13 @@
                                 </div>
                             </div>
                             <div class="row d-flex justify-content-between align-items-center">
-                                <div class="col-12 col-xl-6 order-lg-1">
+                                <div class="col-12 col-xl-6 order-xl-1 d-flex justify-content-center justify-content-xl-end">
                                     <button class="btn btn_w100">save preferences</button>
                                 </div>
-                                <div class="col-12 col-xl-6 order-lg-0 text-center text-xl-left">
-                                    <a href="#" class="link2">Sign Out</a>
+                                <div class="col-12 col-xl-6 order-xl-0 text-center text-xl-left">
+                                    <div class="form-group form-group_setlink">
+                                        <a href="#" class="link2">Sign Out</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

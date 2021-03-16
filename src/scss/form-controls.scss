@@ -77,6 +77,12 @@ input.form-control {
   @media (min-width: 992px) {
     height: 84px;
   }
+  @media (min-width: 1200px) {
+    height: 55px;
+  }
+  @media (min-width: 1500px) {
+    height: 84px;
+  }
   &.form-control_header {
     height: 55px;
     @media (min-width: 1200px) {
@@ -93,6 +99,12 @@ textarea.form-control {
   @media (min-width: 768px) {
     height: 168px;
   }
+  @media (min-width: 1200px) {
+    height: 159px;
+  }
+  @media (min-width: 1500px) {
+    height: 168px;
+  }
 }
 .form-group_20 {
   margin-bottom: 1rem;
@@ -104,9 +116,9 @@ textarea.form-control {
   margin-bottom: 1.875rem;
 }
 .form-group_setlink {
-  margin-top: 39px;
-  @media (min-width: 768px) {
-    margin-top: 43px;
+  margin-top: 35px;
+  @media (min-width: 1200px) {
+    margin: 0;
   }
 }
 .form-group_40 {
@@ -159,6 +171,9 @@ textarea.form-control {
 .form-group_input {
   margin-bottom: 23px;
   @media (min-width: 1200px) {
+    margin-bottom: 42px;
+  }
+  @media (min-width: 1500px) {
     margin-bottom: 54px;
   }
 }
@@ -181,7 +196,7 @@ textarea.form-control {
 }
 .form-group_check {
   margin: 40px 0;
-  @media (min-width: 1200px) {
+  @media (min-width: 1500px) {
     margin: 50px 0;
   }
 }
