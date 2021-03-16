@@ -27,7 +27,7 @@ body textarea:required:valid {
   border: $input_border;
   background-color: $input_bg;
   border-radius: $input_border_radius;
-  padding: 16px 30px;
+  padding: 15px 30px 16px;
   color: $input_txt_color;
   font-family: $input_txt_family;
   font-size: $input_txt_xs_size;
@@ -42,10 +42,11 @@ body textarea:required:valid {
     box-shadow: none;
     background-color: $input_hover_bg;
     color: $input_hover_txt_color;
+    border-color: $btn_bg_color;
   }
   &::placeholder {
     color: $input_placeholder_color;
-    opacity: 0.8;
+    opacity: 0.7;
   }
   @media (min-width: 992px) {
     padding: 16px 30px;
@@ -62,7 +63,7 @@ body textarea:required:valid {
       }
       &::placeholder {
         color: $input_placeholder_color;
-        opacity: 0.8;
+        opacity: 0.7;
       }
 
     }
@@ -72,25 +73,25 @@ body textarea:required:valid {
   }
 }
 input.form-control {
-  height: 52px;
+  height: 55px;
   @media (min-width: 992px) {
-    height: 70px;
+    height: 84px;
   }
   &.form-control_header {
-    height: 52px;
+    height: 55px;
     @media (min-width: 1200px) {
-      height: 52px;
+      height: 55px;
     }
     @media (min-width: 1920px) {
-      height: 70px;
+      height: 84px;
     }
   }
 }
 textarea.form-control {
   border-radius: $textarea_border_radius;
-  min-height: 142px;
+  min-height: 159px;
   @media (min-width: 768px) {
-    height: 158px;
+    height: 168px;
   }
 }
 .form-group_20 {
@@ -156,21 +157,32 @@ textarea.form-control {
   }
 }
 .form-group_input {
-  margin-bottom: 25px;
-  @media (min-width: 768px) {
-    margin-bottom: 50px;
+  margin-bottom: 23px;
+  @media (min-width: 1200px) {
+    margin-bottom: 54px;
+  }
+}
+.form-group_input2 {
+  margin-bottom: 23px;
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+  &.pr10px {
+    @media (min-width: 1500px) {
+      padding-right: 10px;
+    }
   }
 }
 .form-group_check1 {
-  margin: 36px 0 41px;
-  @media (min-width: 768px) {
-    margin: 45px 0;
+  margin: 35px 0 32px;
+  @media (min-width: 1200px) {
+    margin: 0;
   }
 }
 .form-group_check {
-  margin: 32px 0 44px;
-  @media (min-width: 768px) {
-    margin: 48px 0 43px;
+  margin: 40px 0;
+  @media (min-width: 1200px) {
+    margin: 50px 0;
   }
 }
 .form-group_settings-btn {
@@ -332,9 +344,9 @@ textarea.form-control {
     &.custom-control-inline {
       margin-right: 0;
       + .custom-control-inline {
-        margin-left: 64px;
+        margin-left: 55px;
         @media (min-width: 1200px) {
-          margin-left: 36px;
+          margin-left: 59px;
         }
       }
     }
@@ -346,7 +358,6 @@ textarea.form-control {
     font-size: $radio_txt_xs_size;
     line-height: $radio_txt_xs_lh;
     cursor: pointer;
-    text-transform: uppercase;
     &::before {
       top: $radio_xs_top;
       left: $radio_xs_left;
@@ -356,7 +367,6 @@ textarea.form-control {
       border: $radio_border;
       outline: none !important;
       border-radius: 100%;
-      z-index: 1;
     }
     &::after {
       top: $radio_xs_marker_top;
@@ -366,7 +376,6 @@ textarea.form-control {
       outline: none !important;
       border-radius: 100%;
       background: no-repeat 50% / 50% 50%;
-      z-index: -1;
     }
     @media (min-width: 992px) {
       font-size: $radio_txt_size;
@@ -395,7 +404,7 @@ textarea.form-control {
           background-image: none;
         }
         &::before {
-          border-color: $radio_checked_border_color;
+          border-color: $radio_checked_border_color !important;
           background-color: $radio_checked_bg_color;
         }
       }
@@ -569,27 +578,29 @@ textarea.form-control {
       }
     }
     .custom-control-label {
-      font-size: 15px;
-      line-height: 23px;
-      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 400;
       &::before {
         left: - $switch_bg_width_mob - $switch_margin_right_mob;
+        margin-left: 0;
         top: 0.25rem;
       }
       &::after {
-        top: calc(0.25rem + 4px);
-        left: - $switch_bg_width_mob - $switch_margin_right_mob + 5px;
+        top: calc(0.25rem - 5px);
+        left: - $switch_bg_width_mob - $switch_margin_right_mob - 5px;
+        margin-left: 0;
       }
       @media (min-width: 768px) {
-        font-size: 18px;
-        line-height: 38px;
+        font-size: 22px;
+        line-height: 30px;
         &::before {
           top: calc(0.25rem + 3px);
           left: - $switch_bg_width - $switch_margin_right;
         }
         &::after {
-          top: calc(0.25rem + 9px);
-          left: - $switch_bg_width - $switch_margin_right + 8px;
+          top: calc(0.25rem - 2px);
+          left: - $switch_bg_width - $switch_margin_right - 5px;
         }
       }
     }
@@ -597,13 +608,15 @@ textarea.form-control {
       &:checked {
         ~ .custom-control-label {
           &::after {
-            top: calc(0.25rem - 6px);
-            left: - $switch_bg_width_mob - $switch_margin_right_mob + 2px;
+            top: calc(0.25rem - 5px);
+            left: - $switch_bg_width_mob - $switch_margin_right_mob - 5px;
+            transform: translateX(23px);
           }
           @media (min-width: 768px) {
             &::after {
-              top: 0.25rem;
-              left: - $switch_bg_width - $switch_margin_right + 3px;
+              top: calc(0.25rem - 2px);
+              left: - $switch_bg_width - $switch_margin_right - 0px;
+              transform: translateX(23px);
             }
           }
         }
@@ -614,15 +627,16 @@ textarea.form-control {
 
 .custom-file {
   display: block;
-  width: 180px;
+  width: 290px;
   height: auto;
-  margin: -100px auto 0;
-  @media (min-width: 400px) {
-    margin: -55px auto 0;
-  }
   @media (min-width: 768px) {
+    width: 290px;
+  }
+  @media (min-width: 1200px) {
     width: 250px;
-    margin: -90px auto 0;
+  }
+  @media (min-width: 1500px) {
+    width: 302px;
   }
   .custom-file-input {
     width: 100%;
@@ -755,14 +769,24 @@ textarea.form-control {
     }
   }
   &.btn_3 { //change photo
-    width: 180px;
-    height: 30px;
-    padding: 7px 15px;
-    border-radius: 100px;
+    width: 290px;
+    height: 52px;
+    padding: 14px 15px;
+    border-radius: 0;
+    background-color: rgba(220,89,150, 0.79);
+    border: none;
+    &::after {
+      content: none;
+    }
+    &:hover {
+      color: $body_bg_color;
+      background-color: $btn_hover_bg_color;
+    }
     @media (min-width: 992px) {
-      padding: 17px 20px;
-      width: 250px;
-      height: 55px;
+      font-size: 21px;
+      padding: 20px 20px;
+      width: 302px;
+      height: 69px;
     }
   }
   &.btn_w100 {
