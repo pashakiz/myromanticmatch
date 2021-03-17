@@ -123,16 +123,10 @@ h2 {
       }
     }
   }
-  @media (min-width: 1920px) {}
   &.h2_list {
-    margin: 0 0 12px 0;
+    margin: 0 0 46px 0;
     @media (min-width: 992px) {
-      margin: 50px auto 0;
-      text-align: center;
-    }
-    @media (min-width: 1500px) {
-      margin: 50px 12px 0;
-      text-align: left;
+      margin: 16px 0 98px 0;
     }
   }
   &.h2_login {

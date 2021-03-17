@@ -266,24 +266,36 @@
   }
 
   &.compatibility_list {
-    margin-bottom: 14px;
+    margin: 15px 0 12px;
     @media (min-width: $user_list_item_breakpoint) {
-      margin-bottom: 31px;
+      margin: 40px 0 36px;
     }
     .compatibility__title {
-      font-size: 8px;
+      font-size: 7px;
       margin-top: 7px;
       @media (min-width: $user_list_item_breakpoint) {
-        margin-top: 17px;
+        margin-top: 7px;
         font-size: 15px;
       }
     }
     .compatibility__progress {
-      width: 34px;
-      height: 9px;
+      width: 36px;
+      height: 10px;
+      &.compatibility__progress_svgup {
+        svg {
+          position: relative;
+          top: -12px;
+        }
+      }
       @media (min-width: $user_list_item_breakpoint) {
-        width: 65px;
-        height: 15px;
+        width: 77px;
+        height: 21px;
+        &.compatibility__progress_svgup {
+          svg {
+            position: relative;
+            top: -6px;
+          }
+        }
       }
     }
     .compatibility__chart {

@@ -683,6 +683,7 @@ textarea.form-control {
   font-weight: 400;
   color: $body_bg_color;
   line-height: 1;
+  text-align: center;
   position: relative;
   &:hover {
     color: $body_bg_color;
@@ -769,18 +770,26 @@ textarea.form-control {
     }
   }
   &.btn_2 { //user list
-    width: 106px;
-    height: 32px;
-    font-size: 10px;
+    width: 100%;
+    height: 42px;
+    font-size: 11px;
     line-height: 1;
-    padding: 10px 10px 9px;
-    text-align: center;
-    border-radius: 100px 0 0 100px;
+    padding: 13px 7px 12px;
+    &::after {
+      width: calc(100% - 14px);
+      height: calc(100% - 12px);
+      top: 6px;
+    }
     @media (min-width: $user_list_item_breakpoint) {
-      width: 174px;
-      height: 66px;
-      font-size: 20px;
-      padding: 21px 20px 20px;
+      width: 100%;
+      height: 83px;
+      font-size: 21px;
+      padding: 28px 8px 25px;
+      &::after {
+        width: calc(100% - 16px);
+        height: calc(100% - 12px);
+        top: 6px;
+      }
     }
   }
   &.btn_3 { //change photo
