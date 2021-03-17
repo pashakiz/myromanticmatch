@@ -1,31 +1,14 @@
 <%= _.template(require('./../includes/header-index.html'))() %>
-    <header class="header header_bg bg-05">
-        <div class="header__inner">
-            <div class="container">
-                <div class="header__info">
-                    <div class="header__row header__row_login">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="logo"></div>
-                        </div>
-                    </div>
-                    <div class="header__row header__row_form">
-                        <h1 class="h1_login">Signup to access <br>your matches</h1>
-                        <div class="header__form">
-                            <form action="">
-                                <div class="form-group form-group_login">
-                                    <input class="form-control form-control_header" type="text" placeholder="Email">
-                                </div>
-                                <div class="form-group form-group_login">
-                                    <input class="form-control form-control_header" type="password" placeholder="Password">
-                                </div>
-                                <div class="form-group form-group_login form-group_login-btn">
-                                    <button class="btn btn_w100">Sign Up</button>
-                                </div>
-                                <div class="form-group form-group_up-login text-center">
-                                    <a class="link1" href="login.html">Or Log In?</a>
-                                </div>
-                            </form>
-                        </div>
+    <script>
+        document.body.classList.add('body_bg-signup');
+    </script>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__row-inline d-flex justify-content-center align-items-center">
+                    <div class="logo logo_main">
+                        <div class="logo__img"></div>
+                        <div class="logo__txt">my romantic match</div>
                     </div>
                 </div>
             </div>

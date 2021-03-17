@@ -1,67 +1,31 @@
 h1 {
   font-family: $font_family2;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 43px;
-  color: $font_color;
-  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 47px;
+  color: $font_color2;
+  margin-bottom: 36px;
+  text-align: center;
   @media (min-width: 1200px) {
-    color: $font_color2;
-    font-size: 42px;
-    line-height: 65px;
-    margin-bottom: 35px;
-  }
-  @media (min-width: 1500px) {
-    font-size: 63px;
-    line-height: 100px;
+    font-size: 95px;
+    line-height: 110px;
     margin-bottom: 50px;
   }
   @media (min-width: 1920px) {
-    font-size: 63px;
-    line-height: 100px;
-    margin-bottom: 113px;
+    font-size: 137px;
+    line-height: 162px;
+    margin-bottom: 75px;
   }
   &.h1_index {
-    color: $input_txt_color;
-    font-size: 52px;
-    line-height: 62px;
-    text-align: center;
-    margin-bottom: 35px;
-    @media (min-width: 1200px) {
-      color: $font_color3;
-      font-size: 55px;
-      line-height: 70px;
-      margin-bottom: 45px;
-    }
-    @media (min-width: 1500px) {
-      font-size: 70px;
-      line-height: 85px;
-      margin-bottom: 75px;
-    }
-    @media (min-width: 1920px) {
-      font-size: 85px;
-      line-height: 101px;
-      margin-bottom: 75px;
-    }
-  }
-  &.h1__index-content {
-    text-align: center;
-    color: $font_color2;
-    font-size: 51px;
-    line-height: 55px;
-    margin: 0;
-    @media (min-width: 1200px) {
-      color: $font_color2;
-      font-size: 90px;
-      line-height: 110px;
-    }
-    @media (min-width: 1500px) {
-      font-size: 115px;
-      line-height: 170px;
-    }
-    @media (min-width: 1920px) {
-      font-size: 121px;
-      line-height: 175px;
+    @media (min-width: 1200px) {}
+    @media (min-width: 1920px) {}
+    .h1_index-span {
+      font-size: 38px;
+      line-height: 47px;
+      @media (min-width: 1200px) {
+        font-size: inherit;
+        line-height: inherit;
+      }
     }
   }
   &.h1_login {
