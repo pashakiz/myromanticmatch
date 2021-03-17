@@ -11,26 +11,26 @@ body {
   &.body_bg {}
   &.body_bg-index {
     @media (min-width: 1200px) {
-      background: url('../img/bg/bg-text-index.svg') 50% 0 no-repeat $body_bg_color;
-      background-size: 38%;
+      background: url('../img/bg/bg-text-index.svg') 50% -2% no-repeat $body_bg_color;
+      background-size: 40%;
     }
   }
   &.body_bg-searching {
     @media (min-width: 1200px) {
-      background: url('../img/bg/bg-text-searching.svg') 50% 0 no-repeat $body_bg_color;
-      background-size: 38%;
+      background: url('../img/bg/bg-text-searching.svg') 50% -2% no-repeat $body_bg_color;
+      background-size: 40%;
     }
   }
   &.body_bg-login {
     @media (min-width: 1200px) {
-      background: url('../img/bg/bg-text-login.svg') 50% 0 no-repeat $body_bg_color;
-      background-size: 38%;
+      background: url('../img/bg/bg-text-login.svg') 50% -2% no-repeat $body_bg_color;
+      background-size: 40%;
     }
   }
   &.body_bg-signup {
     @media (min-width: 1200px) {
-      background: url('../img/bg/bg-text-signup.svg') 50% 0 no-repeat $body_bg_color;
-      background-size: 38%;
+      background: url('../img/bg/bg-text-signup.svg') 50% -2% no-repeat $body_bg_color;
+      background-size: 40%;
     }
   }
 }

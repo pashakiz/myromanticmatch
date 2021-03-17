@@ -17,8 +17,15 @@ h1 {
     margin-bottom: 75px;
   }
   &.h1_index {
-    @media (min-width: 1200px) {}
-    @media (min-width: 1920px) {}
+    @media (min-width: 1200px) {
+      position: relative;
+      top: -25px;
+      margin-bottom: 25px;
+    }
+    @media (min-width: 1920px) {
+      top: -60px;
+      margin-bottom: 15px;
+    }
     .h1_index-span {
       font-size: 38px;
       line-height: 47px;
