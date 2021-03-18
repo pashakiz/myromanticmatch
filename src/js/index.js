@@ -45,36 +45,6 @@ $(function() {
             $('.user-profile-photo').css('background-image', 'url(' + url + ')');
         });
 
-        /* Gallery dragging/grabbing */
-        const slider = document.querySelector('.user-profile-gallery');
-        let isDown = false;
-        let startY;
-        let scrollTop;
-
-        slider.addEventListener('mousedown', (e) => {
-            isDown = true;
-            //slider.classList.add('active');
-            startY = e.pageY - slider.offsetTop;
-            scrollTop = slider.scrollTop;
-        });
-        slider.addEventListener('mouseleave', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-        slider.addEventListener('mouseup', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-        slider.addEventListener('mousemove', (e) => {
-            if(!isDown) return;
-            e.preventDefault();
-            slider.classList.add('active');
-            const y = e.pageY - slider.offsetTop;
-            const walk = (y - startY) * 2; //scroll-fast
-            slider.scrollTop = scrollTop - walk;
-            console.log(walk);
-        });
-
         //slider (Profile gallery) for mobile
         $('.owl-carousel.user-profile-slider').owlCarousel({
             items: 1,
@@ -102,25 +72,26 @@ $(function() {
         // });
 
         //custom sliders
-        owlInit('.user-list-slider-login');
+        owlInit('.login-slider');
 
     });
 
     //init owl carousel for custom screen width
     function owlInit(el_class) {
-        if (window.innerWidth > 1200) {
+        if (window.innerWidth < 1200) {
             $(el_class).addClass('owl-carousel');
             $('.owl-carousel' + el_class).owlCarousel({
-                loop: false,
+                loop: true,
+                dots: false,
                 items: 2,
-                margin: 0,
+                margin: 11,
                 autoWidth: true,
                 responsive:{
                     768:{
-                        margin: 30
+                        margin: 11
                     },
                     992:{
-                        margin: 60
+                        margin: 11
                     },
                     1200:{
                         margin: 50
@@ -136,8 +107,18 @@ $(function() {
         }
     }
 
+    // document.querySelector('.display.display_03').classList.add('animation');
+    // function animateSingUpArea() {
+    //     let screen = document.querySelector('.display.display_03');
+    //     screen.classList.add('animation_stop');
+    //     setTimeout(function () {
+    //         screen.classList.remove('animation');
+    //         screen.classList.remove('animation_stop');
+    //     },1000);
+    // }
+
     $(window).resize(function() {
-        owlInit('.user-list-slider-login');
+        owlInit('.login-slider');
     });
 
 });

@@ -12,7 +12,32 @@
   }
 }
 .display_02 {}
-.display_03 {}
+.display_03 {
+  @media (min-width: 1200px) {
+    margin-top: 44px;
+  }
+  &.animation {
+    .user-list-item_login1 {
+      @media (min-width: 1200px) {
+        position: absolute;
+        top: calc(50% - 156px);
+        left: calc(50% - 115px);
+      }
+      @media (min-width: 1920px) {
+        top: calc(50% - 226px);
+        left: calc(50% - 167px);
+      }
+    }
+  }
+  &.animation_stop {
+    .user-list-item_login1 {
+      @media (min-width: 1200px) {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
 .display-grid {
   width: 100%;
   display: flex;
@@ -22,6 +47,7 @@
     justify-content: space-between;
     min-width: $container-xxl;
     max-width: $container-xxxl;
+    position: relative;
   }
 }
 .display-grid__col {}
@@ -106,5 +132,34 @@
   }
   @media (min-width: 1920px) {
     display: none;
+  }
+}
+
+.notice-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 26px 0 21px;
+}
+.notice-row__icon {
+  display: block;
+}
+.notice-row__txt {
+  @media (min-width: 1200px) {
+    font-family: $font_family;
+    color: $font_color;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    position: relative;
+    top: -4px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 36px;
+    line-height: 50px;
+    margin-left: 21px;
+    top: -4px;
   }
 }

@@ -53,7 +53,7 @@ body textarea:required:valid {
     font-size: $input_txt_size;
     line-height: $input_txt_lh;
   }
-  &.form-control_header {
+  &.form-control_login {
     text-align: center;
     @media (min-width: 1200px) {
       color: #957B70;
@@ -83,10 +83,10 @@ input.form-control {
   @media (min-width: 1500px) {
     height: 84px;
   }
-  &.form-control_header {
+  &.form-control_login {
     height: 55px;
     @media (min-width: 1200px) {
-      height: 55px;
+      height: 84px;
     }
     @media (min-width: 1920px) {
       height: 84px;
@@ -134,15 +134,13 @@ textarea.form-control {
   }
 }
 .form-group_login {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   @media (min-width: 992px) {
     margin-bottom: 25px;
   }
   @media (min-width: 1200px) {
-    margin-bottom: 25px;
-  }
-  @media (min-width: 1920px) {
-    margin-bottom: 29px;
+    margin-bottom: 34px;
+    padding: 0 10px;
   }
 }
 .form-group_login-btn {
@@ -152,20 +150,17 @@ textarea.form-control {
   z-index: 0;
   @media (min-width: 1200px) {
     margin-top: 32px;
-  }
-  @media (min-width: 1920px) {
-    margin-top: 37px;
-    margin-bottom: 60px;
+    padding: 0;
   }
 }
 .form-group_up-login {
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 0;
   @media (min-width: 1200px) {
-    margin-top: 24px;
+    margin-top: 30px;
   }
   @media (min-width: 1920px) {
-    margin-top: 34px;
+    margin-top: 40px;
   }
 }
 .form-group_input {
