@@ -62,3 +62,46 @@
   }
 }
 .login-slider {}
+
+.login-progress {
+  width: 100%;
+  max-width: 414px;
+  margin: 0 auto;
+  padding-top: 17px;
+  @media (min-width: 1200px) {
+    padding-top: 8px;
+  }
+}
+
+.loading {
+  margin-bottom: 55px;
+  @media (min-width: 1200px) {
+    margin-bottom: 68px;
+  }
+}
+.loading__title {
+  font-family: $font_family;
+  font-weight: 600;
+  color: $font_color;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 13px;
+  text-align: center;
+  @media (min-width: 1200px) {
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 21px;
+  }
+}
+.loading__progress {}
+.progress_loading {
+  height: 18px;
+  border: 1px solid $btn_bg_color;
+  border-radius: 0;
+  @media (min-width: 1200px) {
+    height: 28px;
+  }
+  .progress-bar {
+    background-color: $btn_bg_color;
+  }
+}

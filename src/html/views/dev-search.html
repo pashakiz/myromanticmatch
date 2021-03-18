@@ -1,0 +1,61 @@
+<%= _.template(require('./../includes/header-index.html'))() %>
+    <script>
+        document.body.classList.add('body_bg-search');
+    </script>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__row-inline d-flex justify-content-center align-items-center">
+                    <div class="logo logo_main">
+                        <div class="logo__img"></div>
+                        <div class="logo__txt">my romantic match</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container container_index">
+            <div class="display display_02">
+                <div class="display-grid">
+                    <div class="display-grid__col display-grid__col-1 d-none d-xl-block">
+                        <img class="display-grid__img m-0 img-fluid d-none d-xl-block" src="img/index-collage-01-xl.jpg" alt="">
+                    </div>
+                    <div class="display-grid__col display-grid__col-2">
+                        <h1 class="h1_login d-xl-none">Searching <br><span class="h1_2ndrow">Best Matches</span></h1>
+                        <h1 class="h1_login d-none d-xl-block">Searching <br>your best <br>matches</h1>
+                        <div class="login-progress">
+                            <div class="loading">
+                                <div class="loading__title">1. Your location match</div>
+                                <div class="loading__progress">
+                                    <div class="progress progress_loading">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loading">
+                                <div class="loading__title">2. Your gender match</div>
+                                <div class="loading__progress">
+                                    <div class="progress progress_loading">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loading">
+                                <div class="loading__title">3. Your FS score match</div>
+                                <div class="loading__progress">
+                                    <div class="progress progress_loading">
+                                        <div class="progress-bar" role="progressbar" style="width: 71%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-grid__col display-grid__col-3 d-none d-xl-flex flex-column align-items-end">
+                        <img class="display-grid__img m-0 img-fluid d-none d-xl-block" src="img/index-collage-03-xl.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<%= _.template(require('./../includes/footer.html'))() %>
