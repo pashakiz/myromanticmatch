@@ -1,11 +1,8 @@
 <%= _.template(require('./../includes/header-index.html'))() %>
-    <script>
-        document.body.classList.add('body_bg-index');
-    </script>
     <div id="page-preloader" class="preloader">
         <div class="loader"></div>
     </div>
-    <header class="header header_index">
+    <header class="header">
         <div class="container">
             <div class="header__row">
                 <div class="header__row-inline d-flex justify-content-center align-items-center">
@@ -17,7 +14,7 @@
             </div>
         </div>
     </header>
-    <main class="main"> <!-- .display_01 .display_02 .display_03 -->
+    <main class="main">
         <div class="container container_index">
             <div class="display display_01">
                 <div class="display-grid">
@@ -56,6 +53,204 @@
                     <p>We believe in unconditional sincerity and transparency. That's why our users' profiles reflect this in every possible way. With a simple and friendly layout, our profiles clearly show all the details you need to make an informed decision.</p>
                 </div>
             </div>
+            <div class="display display_02">
+                <div class="display-grid">
+                    <div class="display-grid__col display-grid__col-1 d-none d-xl-block">
+                        <img class="display-grid__img m-0 img-fluid d-none d-xl-block" src="img/index-collage-01-xl.jpg" alt="">
+                    </div>
+                    <div class="display-grid__col display-grid__col-2">
+                        <h1 class="h1_login d-xl-none">Searching <br><span class="h1_2ndrow">Best Matches</span></h1>
+                        <h1 class="h1_login d-none d-xl-block">Searching <br>your best <br>matches</h1>
+                        <div class="login-progress">
+                            <div class="loading">
+                                <div class="loading__title">1. Your location match</div>
+                                <div class="loading__progress">
+                                    <div class="progress progress_loading progress_loading-1">
+                                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loading">
+                                <div class="loading__title">2. Your gender match</div>
+                                <div class="loading__progress">
+                                    <div class="progress progress_loading progress_loading-2">
+                                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loading">
+                                <div class="loading__title">3. Your FS score match</div>
+                                <div class="loading__progress">
+                                    <div class="progress progress_loading progress_loading-3">
+                                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-grid__col display-grid__col-3 d-none d-xl-flex flex-column align-items-end">
+                        <img class="display-grid__img m-0 img-fluid d-none d-xl-block" src="img/index-collage-03-xl.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="display display_03">
+                <div class="display-grid">
+                    <div class="display-grid__col display-grid__col-1 d-none d-xl-block">
+                        <div class="user-list-item user-list-item_login user-list-item_login1">
+                            <div class="user-list-item__pic">
+                                <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-01.jpg');">
+                                    <div class="user-list-item__row">
+                                        <div class="user-list-item__name">Anastasia, 29</div>
+                                        <div class="user-list-item__loc">new jersi - 500m</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-list-item user-list-item_login user-list-item_login3">
+                            <div class="user-list-item__pic">
+                                <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-03.jpg');">
+                                    <div class="user-list-item__row">
+                                        <div class="user-list-item__name">Anastasia, 29</div>
+                                        <div class="user-list-item__loc">new jersi - 500m</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-grid__col display-grid__col-2">
+                        <div class="notice-row d-none d-xl-flex">
+                            <a class="notice notice_login" href="#">4</a>
+                            <div class="notice-row__txt">new matching profiles</div>
+                        </div>
+                        <h1 class="h1_login d-xl-none">Sign Up <br><span class="h1_2ndrow">To Unlock Them</span></h1>
+                        <h1 class="h1_login d-none d-xl-block">Sign up to <br>unlock it</h1>
+                        <div class="d-xl-none">
+                            <div class="login-slider-wrap">
+                                <div class="login-slider">
+                                    <div class="user-list-item user-list-item_login">
+                                        <div class="user-list-item__pic">
+                                            <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-01.jpg');">
+                                                <div class="user-list-item__row">
+                                                    <div class="user-list-item__name">Anastasia, 29</div>
+                                                    <div class="user-list-item__loc">new jersi - 500m</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-list-item user-list-item_login">
+                                        <div class="user-list-item__pic">
+                                            <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-02.jpg');">
+                                                <div class="user-list-item__row">
+                                                    <div class="user-list-item__name">Anastasia, 29</div>
+                                                    <div class="user-list-item__loc">new jersi - 500m</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-list-item user-list-item_login">
+                                        <div class="user-list-item__pic">
+                                            <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-03.jpg');">
+                                                <div class="user-list-item__row">
+                                                    <div class="user-list-item__name">Anastasia, 29</div>
+                                                    <div class="user-list-item__loc">new jersi - 500m</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-list-item user-list-item_login">
+                                        <div class="user-list-item__pic">
+                                            <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-04.jpg');">
+                                                <div class="user-list-item__row">
+                                                    <div class="user-list-item__name">Anastasia, 29</div>
+                                                    <div class="user-list-item__loc">new jersi - 500m</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-list-item user-list-item_login">
+                                        <div class="user-list-item__pic">
+                                            <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-05.jpg');">
+                                                <div class="user-list-item__row">
+                                                    <div class="user-list-item__name">Anastasia, 29</div>
+                                                    <div class="user-list-item__loc">new jersi - 500m</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-list-item user-list-item_login">
+                                        <div class="user-list-item__pic">
+                                            <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-06.jpg');">
+                                                <div class="user-list-item__row">
+                                                    <div class="user-list-item__name">Anastasia, 29</div>
+                                                    <div class="user-list-item__loc">new jersi - 500m</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-list-item user-list-item_login">
+                                        <div class="user-list-item__pic">
+                                            <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-07.jpg');">
+                                                <div class="user-list-item__row">
+                                                    <div class="user-list-item__name">Anastasia, 29</div>
+                                                    <div class="user-list-item__loc">new jersi - 500m</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-list-item user-list-item_login">
+                                        <div class="user-list-item__pic">
+                                            <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-08.jpg');">
+                                                <div class="user-list-item__row">
+                                                    <div class="user-list-item__name">Anastasia, 29</div>
+                                                    <div class="user-list-item__loc">new jersi - 500m</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-form">
+                            <form action="">
+                                <div class="form-group form-group_login">
+                                    <input class="form-control form-control_login" type="text" placeholder="Email">
+                                </div>
+                                <div class="form-group form-group_login">
+                                    <input class="form-control form-control_login" type="password" placeholder="Password">
+                                </div>
+                                <div class="form-group form-group_login form-group_login-btn">
+                                    <button class="btn btn_w100">sign up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="display-grid__col display-grid__col-3 d-none d-xl-flex flex-column align-items-end">
+                        <div class="user-list-item user-list-item_login user-list-item_login2">
+                            <div class="user-list-item__pic">
+                                <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-02.jpg');">
+                                    <div class="user-list-item__row">
+                                        <div class="user-list-item__name">Anastasia, 29</div>
+                                        <div class="user-list-item__loc">new jersi - 500m</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-list-item user-list-item_login user-list-item_login4">
+                            <div class="user-list-item__pic">
+                                <div class="user-list-item__img d-flex justify-content-center align-items-center" style="background-image: url('img/photos/user-extra-04.jpg');">
+                                    <div class="user-list-item__row">
+                                        <div class="user-list-item__name">Anastasia, 29</div>
+                                        <div class="user-list-item__loc">new jersi - 500m</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+<%= _.template(require('./../includes/animation-js.html'))() %>
+
 <%= _.template(require('./../includes/footer.html'))() %>

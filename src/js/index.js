@@ -107,16 +107,6 @@ $(function() {
         }
     }
 
-    // document.querySelector('.display.display_03').classList.add('animation');
-    // function animateSingUpArea() {
-    //     let screen = document.querySelector('.display.display_03');
-    //     screen.classList.add('animation_stop');
-    //     setTimeout(function () {
-    //         screen.classList.remove('animation');
-    //         screen.classList.remove('animation_stop');
-    //     },1000);
-    // }
-
     $(window).resize(function() {
         owlInit('.login-slider');
     });

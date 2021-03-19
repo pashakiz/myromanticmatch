@@ -2,9 +2,10 @@
   &.user-list-item_login {
     margin: 0 0 30px;
     @media (min-width: 1200px) {
-      transition: 0.5s all;
+      transition: 0.5s top, 0.5s right, 0.5s bottom, 0.5s left;
       width: 230px;
       margin: 0 0 84px;
+      padding-bottom: 0;
     }
     @media (min-width: 1920px) {
       width: 334px;
