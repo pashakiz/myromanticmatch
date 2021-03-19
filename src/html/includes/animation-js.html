@@ -23,7 +23,6 @@
         hideAreaIndex();
         showAreaProgressBars();
         setTimeout(goToLogin, searchTime);
-        //showAreaLogin();
     }
 
     function showAreaIndex() {
@@ -40,6 +39,7 @@
     function showAreaProgressBars() {
         document.body.classList.add('body_bg-search');
         document.querySelector('.display.display_02').style.display = 'block';
+        document.querySelector('.display.display_02').scrollIntoView({block: 'center', behavior: 'smooth'});
         loading();
     }
     function hideAreaProgressBars() {
