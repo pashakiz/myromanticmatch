@@ -165,7 +165,7 @@
   }
 }
 
-@keyframes spin {
+@keyframes bits {
   from {
     transform: scale(1.05);
   }
@@ -175,7 +175,7 @@
 }
 
 .btn-index {
-  animation: 2s spin infinite linear;
+  animation: 2s bits infinite linear;
 }
 
 .btn-index_mob {
