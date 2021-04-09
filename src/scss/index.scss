@@ -165,7 +165,19 @@
   }
 }
 
-.btn-index {}
+@keyframes spin {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.btn-index {
+  animation: 2s spin infinite linear;
+}
+
 .btn-index_mob {
   position: absolute !important;
   top: 60%;
